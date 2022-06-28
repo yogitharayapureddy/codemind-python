@@ -1,12 +1,16 @@
 n=int(input())
 r=0
-temp=n
-if(n<0):
-    n=n*-1
-while(n!=0):
-    i=n%10
-    r=(r*10)+i
-    n=n//10
-if(temp<0):
-    r=r*-1
-print(r)
+s=0
+if n<0:
+    n=-n
+    while n!=0:
+        r=n%10
+        s=s*10+r
+        n=n//10
+    print(-s)
+else:
+    while n!=0:
+        r=n%10
+        s=s*10+r
+        n=n//10
+    print(s)
