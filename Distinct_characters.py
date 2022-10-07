@@ -1,12 +1,17 @@
-s=input()
-s=s.lower()
-v=''
-for i in s:
-    if s.count(i)==1:
-        v+=i
-r=sorted(v)
+l=input('')
+l=l.lower()
+temp=[]
+v=""
+for e in l:
+    if(e not in temp):
+        if e==" ":
+            continue
+        else:
+            temp.append(e)
+r=sorted(temp)
 for i in r:
     if i==" ":
         continue
     else:
-        print(i,end='')
+        v+=i
+print(v)
