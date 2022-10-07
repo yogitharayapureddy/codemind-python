@@ -1,15 +1,17 @@
-def dig(n):
-    c=0
-    while n:
-        c+=1
-        n//=10
-    return c
 n=int(input())
 l=list(map(int,input().split()))
-m=dig(min(l))
 c=0
-for i in range(n):
-    if(dig(l[i])==m):
+count=0
+k=[]
+for i in l:
+    while(i):
+        d=i%10
         c+=1
-        
-print(c)
+        i=i//10
+    k.append(c)
+    c=0
+v=min(k)
+for j in k:
+    if j==v:
+        count+=1
+print(count)
