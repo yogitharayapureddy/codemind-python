@@ -1,11 +1,11 @@
-n,m=(map(int,input().split()))
-a1=list(map(int,input().split()))
-a2=list(map(int,input().split()))
-temp=[]
-for e in a1:
-    if e in a1 and e not in a2 and e not in temp:
-        temp.append(e)
-for e in a2:
-    if e in a2 and e not in a1 and e not in temp:
-        temp.append(e)
-print(len(temp))
+n,m=map(int,input().split())
+a=list(map(int,input().split()))
+b=list(map(int,input().split()))
+res=[]
+for element in a:
+    if(element not in b and element not in res):
+        res.append(element)
+for element in b:
+    if(element not in a and element not in res):
+        res.append(element)        
+print(len(res))
