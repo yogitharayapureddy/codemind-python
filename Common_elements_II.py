@@ -2,10 +2,10 @@ n,m=map(int,input().split())
 a=list(map(int,input().split()))
 b=list(map(int,input().split()))
 res=[]
-for e in a:
-    if(e not in b and e not in res):
-        res.append(e)
-for e in b:
-    if(e not in a and e not in res):
-        res.append(e)
+for element in a:
+    if(element not in b and element not in res):
+        res.append(element)
+for element in b:
+    if(element not in a and element not in res):
+        res.append(element)        
 print(*res)
