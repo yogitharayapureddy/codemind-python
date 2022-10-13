@@ -1,14 +1,13 @@
 n=int(input())
 a=list(map(int,input().split()))
-b=[]
-for i in a:
-    if i not in b:
-        b.append(i)
-    else:
-        continue
-s=0
-for i in range(len(b)):
-    if(b[i]%2==1):
-        s=s+b[i]
-print(s)
-        
+temp=[]
+sum=0
+for element in a:  
+    if(element not in temp):  #not in
+        temp.append(element) 
+    sum=0
+    for element in temp:
+        if element%2!=0:
+            sum+=element
+            continue
+print(sum)
