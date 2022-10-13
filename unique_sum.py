@@ -1,11 +1,11 @@
-n=int(input())
-a=list(map(int,input().split()))
-temp=[]
-s=0
-for e in a:
-    if(e not in temp):
-        temp.append(e)
-        if e in temp:
-            s+=e
+n=int(input()) 
+a = list(map(int,input().split())) 
+temp = []
+sum=0
+for element in a: 
+    if(element not in temp):  
+        temp.append(element)
+        if element in temp:
+            sum+=element
             continue
-print(s)
+print(sum)
