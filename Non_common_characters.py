@@ -6,15 +6,15 @@ s=''
 c=0
 for i in s1:
     if i not in s2:
-        if i not in s:
-            if i==" ":
-                continue
+        if i not in s: 
+            if i==' ': 
+                continue 
             s+=i
             c+=1
-for i in s2:
+for i in s2: 
     if i not in s1:
         if i not in s:
-            if i==" ":
+            if i==' ':
                 continue
             s+=i
             c+=1
