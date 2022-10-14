@@ -1,16 +1,13 @@
-l=input('')
-l=l.lower()
-temp=[]
-v=""
-for e in l:
-    if(e not in temp):
-        if e==" ":
-            continue
-        else:
-            temp.append(e)
-r=sorted(temp)
+s=input()
+s=s.lower()
+a=''
+v=''
+for i in s:
+    if s.count(i)==1:
+        a+=i
+r=sorted(a)
 for i in r:
-    if i==" ":
+    if i==' ':
         continue
     else:
         v+=i
