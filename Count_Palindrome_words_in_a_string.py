@@ -1,7 +1,15 @@
-n=input().lower()
-n=list(n.split(' '))
-t=0
-for i in n:
-    if i==i[::-1]:
-        t+=1
-print(t)
+def checkPalin(word):
+    if word.lower() == word.lower()[::-1]:
+        return True
+ 
+def countPalin(str):
+    count = 0
+     
+    listOfWords = str.split(" ")
+ 
+    for elements in listOfWords:
+        if (checkPalin(elements)):
+           
+            count += 1
+    print (count)
+\ncountPalin(input(''))
