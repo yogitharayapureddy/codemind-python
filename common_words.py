@@ -7,3 +7,6 @@ s2=s2.split()
 for word1 in s2:
     if word1 in s1:
         print(word1,end=' ')
+        
+        
+        
