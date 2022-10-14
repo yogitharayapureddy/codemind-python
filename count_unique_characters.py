@@ -7,7 +7,7 @@ for i in s:
         v+=i
 r=sorted(v)
 for i in r:
-    if i==" ":
+    if i==' ':
         continue
     else:
         c+=1
