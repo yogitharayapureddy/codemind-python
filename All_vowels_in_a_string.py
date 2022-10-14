@@ -1,6 +1,8 @@
-s=input()
-v=[s.count('a'),s.count('e'),s.count('i'),s.count('o'),s.count('u')]
-n=vowel=[s.count('A'),s.count('E'),s.count('I'),s.count('O'),s.count('U')]
+string=input()
+v= [string.count('a'), string.count('e'), string.count(
+        'i'), string.count('o'), string.count('u')]
+n=vowel = [string.count('A'), string.count('E'), string.count(
+        'I'), string.count('O'), string.count('U')]
 if v.count(0)==0:
     print("True")
 elif n.count(0)==0:
