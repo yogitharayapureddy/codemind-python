@@ -2,7 +2,7 @@ s=input()
 m=1000
 for i in range(0,len(s)):
     r=ord(s[i])
-    if s[i]==' ':
+    if s[i]==" ":
         continue
     else:
         if m>r:
@@ -11,4 +11,4 @@ for i in range(0,len(s)):
 l=s.count(m1)
 n=max(s)
 l1=s.count(n)
-print(m1,l,n,l1,end=' ')
+print(m1,l,n,l1,end=" ")
