@@ -1,13 +1,13 @@
 n=int(input())
 a=list(map(int,input().split()))
-b=[]
-for i in a:
-    if i not in b:
-        b.append(i)
-    else:
-        continue
+temp=[]
 c=0
-for i in range(len(b)):
-    if(b[i]%2==0):
-        c=c+1
+for element in a: 
+    if(element not in temp):  
+        temp.append(element) 
+    c=0
+    for element in temp:
+        if element%2==0:
+            c+=1
+            continue
 print(c)
