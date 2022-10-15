@@ -1,13 +1,13 @@
 n=int(input())
-a=list(map(int,input().split()))
-x,y=map(int,input().split())
-t=[]
+l=list(map(int,input().split()))
+a,b=map(int,input().split())
 c=0
-for i in a:
-    if i>=x and i<=y:
+k=[]
+for i in l:
+    if i>=a and i<=b:
         c+=1
-        t.append(i)
-if c==0:
-    print("-1")
+        k.append(i)
+if c>0:
+    print(*k)
 else:
-    print(*t)
+    print("-1")
