@@ -1,5 +1,3 @@
-l=input().split()
-k=[]
-for i in l:
-    k.append(len(i))
-print(max(k))
+sentence = input()
+longest = max(sentence.split(), key=len)
+print(len(longest))
