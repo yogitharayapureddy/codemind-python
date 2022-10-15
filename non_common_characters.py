@@ -18,7 +18,7 @@ for i in s2:
                 continue
             s+=i
             c+=1
-lst=[s[i] for i in range(0,len(s))]
+lst = [s[i] for i in range(0,len(s))]
 lst.sort()
 for i in lst:
-    print(i,end='')
+    print(i, end = "")
