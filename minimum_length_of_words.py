@@ -1,5 +1,3 @@
-l=input().split()
-k=[]
-for i in l:
-    k.append(len(i))
-print(min(k))
+text = input()
+shortest = min(text.split(), key=len)
+print(len(shortest))
